@@ -7,6 +7,7 @@ import android.view.View
 import android.view.View.inflate
 import android.view.ViewGroup
 import android.view.ViewParent
+import android.widget.TextView
 import androidx.appcompat.resources.Compatibility.Api21Impl.inflate
 import androidx.recyclerview.widget.RecyclerView
 
@@ -17,6 +18,9 @@ class MyAdapter(private val newList:Array<dataClass>): RecyclerView.Adapter<MyAd
         class MyviewHolder(Itemview:View):RecyclerView.ViewHolder(Itemview)
         {
                 //Here we gett the views
+                val textdata=Itemview.findById<TextView>(R.id.TextViewdata)
+                val textdata=Itemview.findViewById<TextView>(R.id.Text)
+                val data2
 
         }
 
